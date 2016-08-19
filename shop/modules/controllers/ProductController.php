@@ -60,6 +60,10 @@ class ProductController extends Controller
     	}
 	}
 
+	public function actionOn()
+	{
+		
+	}
 
 	private function upload()
 	{
