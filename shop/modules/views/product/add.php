@@ -49,20 +49,23 @@
                             <div class="form-group field-product-title required">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="product-title">商品名称</label>
-                                    <input type="text" id="product-title" class="span9" name="Product[title]"></div>
+                                    <input type="text" id="product-title" class="span9" name="Product[title]" value="<?php echo $model->title;?>">
+                                </div>
                                 <p class="help-block help-block-error"></p>
                             </div>
                             <div class="form-group field-wysi required">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="wysi">商品描述</label>
-                                    <textarea id="wysi" class="span9 wysihtml5" name="Product[descr]" style="margin-left:120px"></textarea>
+                                    <textarea id="wysi" class="span9 wysihtml5" name="Product[descr]" style="margin-left:120px">
+                                        <?php echo $model->descr;?>
+                                    </textarea>
                                 </div>
                                 <p class="help-block help-block-error"></p>
                             </div>
                             <div class="form-group field-product-price required">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="product-price">商品价格</label>
-                                    <input type="text" id="product-price" class="span9" name="Product[price]"></div>
+                                    <input type="text" id="product-price" class="span9" name="Product[price]" value="<?php echo $model->price;?>"></div>
                                 <p class="help-block help-block-error"></p>
                             </div>
                             <div class="form-group field-product-ishot">
@@ -96,13 +99,13 @@
                             <div class="form-group field-product-saleprice">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="product-saleprice">促销价格</label>
-                                    <input type="text" id="product-saleprice" class="span9" name="Product[saleprice]"></div>
+                                    <input type="text" id="product-saleprice" class="span9" name="Product[saleprice]" value="<?php echo $model->saleprice;?>"></div>
                                 <p class="help-block help-block-error"></p>
                             </div>
                             <div class="form-group field-product-num">
                                 <div class="span12 field-box">
                                     <label class="control-label" for="product-num">库存</label>
-                                    <input type="text" id="product-num" class="span9" name="Product[num]"></div>
+                                    <input type="text" id="product-num" class="span9" name="Product[num]" value="<?php echo $model->num;?>"></div>
                                 <p class="help-block help-block-error"></p>
                             </div>
                             <div class="form-group field-product-ison">

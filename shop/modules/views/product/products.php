@@ -41,32 +41,22 @@
                         <tr class="first">
                             <td>
                                 <img src="<?php echo $product->cover;?>" class="img-circle avatar hidden-phone" />
-                                <a href="#" class="name"><?php echo $product->title;?></a></td>
+                                <a href="<?php echo yii\helpers\Url::to(['product/mod','productid'=>$product->productid]);?>" class="name"><?php echo $product->title;?></a></td>
                             <td><?php echo $product->num;?></td>
                             <td><?php echo $product->price;?></td>
-                            <td><?php 
-                            if ($product->ishot==0) {
-                               echo "否";
-                            }else{
-                                echo "是";
-                            }?></td>
                             <td>
-                            <?php if ($product->issale==0) {
-                               echo "否";
-                            }else{
-                                echo "是";
-                            }?></td>
+                            <?php $is=['不热卖','热卖'];echo $is[$product->ishot];?>
+                           </td>
+                            <td>
+                            <?php $is=['不促销','传销'];echo $is[$product->issale];?>
+                           </td>
                             <td><?php echo $product->saleprice;?></td>
-                            <td><?php if ($product->ison==0) {
-                               echo "否";
-                            }else{
-                                echo "是";
-                            }?></td>
-                            <td><?php if ($product->istui==0) {
-                               echo "否";
-                            }else{
-                                echo "是";
-                            }?></td>
+                            <td>
+                            <?php $is=['不上架','上架'];echo $is[$product->ison];?>
+                            </td>
+                            <td>
+                            <?php $is=['不推荐','推荐'];echo $is[$product->istui];?>
+                            </td>
                             <td class="align-right">
                                 <a href="<?php echo yii\helpers\Url::to(['product/mod','productid'=>$product->productid]);?>">编辑</a>
                                 <a href="<?php echo yii\helpers\Url::to(['product/on','productid'=>$product->productid]);?>">上架</a>
