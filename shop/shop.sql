@@ -74,6 +74,21 @@ CREATE TABLE IF NOT EXISTS `shop_product`(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+--购物车表 
+DROP TABLE IF EXISTS `shop_cart`;
+CREATE TABLE IF NOT EXISTS `shop_cart`(
+	`cartid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`productid` BIGINT UNSIGNED NOT NULL DEFAULT '0' COMMENT '外键',
+	`productnum` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '数量',
+	`price` DECIMAL(10,2) NOT NULL DEFAULT '00000000.00' COMMENT '商品单价',
+	`userid` BIGINT UNSIGNED NOT NULL DEFAULT '0',
+	`createtime` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '创建时间',
+	PRIMARY KEY(`cartid`),
+	KEY shop_cart_productid(`productid`),
+	KEY shop_cart_userid(`userid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
 
 
 

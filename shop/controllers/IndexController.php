@@ -1,10 +1,10 @@
 <?php
 namespace app\controllers;
 
-use yii\web\Controller;
+use app\controllers\CommonController;
 use app\models\Test;
 
-class IndexController extends Controller
+class IndexController extends CommonController
 {
     
     public function actionIndex()

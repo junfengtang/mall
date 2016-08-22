@@ -49899,3 +49899,195 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1471588332.165
     'REQUEST_TIME' => 1471588332
 ]
+2016-08-22 12:04:36 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\controllers\delete()' in /Users/junfeng/project/imooc_mall/mall/shop/controllers/TestController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-22 12:04:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '52596'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/index'
+    'REQUEST_URI' => '/index.php?r=test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471867476.208
+    'REQUEST_TIME' => 1471867476
+]
+2016-08-22 12:04:37 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\controllers\delete()' in /Users/junfeng/project/imooc_mall/mall/shop/controllers/TestController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-22 12:04:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '52597'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/index'
+    'REQUEST_URI' => '/index.php?r=test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471867477.409
+    'REQUEST_TIME' => 1471867477
+]
+2016-08-22 12:04:53 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\controllers\delete()' in /Users/junfeng/project/imooc_mall/mall/shop/controllers/TestController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-22 12:04:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '52600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/index'
+    'REQUEST_URI' => '/index.php?r=test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471867493.927
+    'REQUEST_TIME' => 1471867493
+]
+2016-08-22 12:04:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\controllers\delete()' in /Users/junfeng/project/imooc_mall/mall/shop/controllers/TestController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-22 12:04:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '52601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/index'
+    'REQUEST_URI' => '/index.php?r=test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471867494.847
+    'REQUEST_TIME' => 1471867494
+]
