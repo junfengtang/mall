@@ -73,7 +73,6 @@ CREATE TABLE IF NOT EXISTS `shop_product`(
 	KEY shop_product_cateid(`cateid`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 --购物车表 
 DROP TABLE IF EXISTS `shop_cart`;
 CREATE TABLE IF NOT EXISTS `shop_cart`(
@@ -86,6 +85,55 @@ CREATE TABLE IF NOT EXISTS `shop_cart`(
 	PRIMARY KEY(`cartid`),
 	KEY shop_cart_productid(`productid`),
 	KEY shop_cart_userid(`userid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--订单
+DROP TABLE IF EXISTS `shop_order`;
+CREATE TABLE IF NOT EXISTS `shop_order`(
+	`orderid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`userid` BIGINT UNSIGNED NOT NULL DEFAULT '0' COMMENT '外键',
+	`addressid` BIGINT UNSIGNED NOT NULL DEFAULT '0' COMMENT '外键',
+	`amount` DECIMAL(10,2) NOT NULL DEFAULT '0.00' COMMENT '订单总价',
+	`status` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '订单状态',
+	`expressid` INT UNSIGNED NOT NULL DEFAULT '0'COMMENT '快递',
+	`expressno` VARCHAR(50) NOT NULL DEFAULT '0'COMMENT '快递状态',
+	`createtime` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '创建时间',
+	`updatetime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+	PRIMARY KEY(`orderid`),
+	KEY shop_order_userid(`userid`),
+	KEY shop_order_addressid(`addressid`),
+	KEY shop_order_expressid(`expressid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--订单详情
+DROP TABLE IF EXISTS `shop_order_detail`;
+CREATE TABLE IF NOT EXISTS `shop_order_detail`(
+	`detailid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`productid` BIGINT UNSIGNED NOT NULL DEFAULT '0' COMMENT '外键',
+	`price` DECIMAL(10,2) NOT NULL DEFAULT '0.00' COMMENT '价格',
+	`productnum` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '数量',
+	`orderid` BIGINT UNSIGNED NOT NULL DEFAULT '0'COMMENT 'orderid',
+	`createtime` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '创建时间',
+	PRIMARY KEY(`detailid`),
+	KEY shop_order_detail_productid(`productid`),
+	KEY shop_order_detail_orderid(`orderid`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--收货地址
+DROP TABLE IF EXISTS `shop_address`;
+CREATE TABLE IF NOT EXISTS `shop_address`(
+	`addressid` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`firstname` VARCHAR(32) NOT NULL DEFAULT '',
+	`lastname` VARCHAR(32) NOT NULL DEFAULT '',
+	`company` VARCHAR(100) NOT NULL DEFAULT ''COMMENT '公司',
+	`address` TEXT COMMENT '公司',
+	`postcode` CHAR(100) NOT NULL DEFAULT ''COMMENT '邮编',
+	`email` VARCHAR(100) NOT NULL DEFAULT ''COMMENT '邮箱',
+	`telephone` VARCHAR(20) NOT NULL DEFAULT ''COMMENT '电话号码',
+	`userid` BIGINT UNSIGNED NOT NULL DEFAULT '0' COMMENT '外键',
+	`createtime` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT '创建时间',
+	PRIMARY KEY(`addressid`),
+	KEY shop_address_userid(`userid`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

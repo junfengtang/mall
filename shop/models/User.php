@@ -4,18 +4,20 @@ namespace app\models;
 
 use yii\db\ActiveRecord;
 use Yii;
+use app\models\User;
+
 
 class User extends ActiveRecord
 {
   public $repass;
   public $loginname;
   public $rememberMe;
-  // 模型对于的表，s省略前缀的写法
+// 模型对于的表，s省略前缀的写法
   public static function tableName()
   {
     return "{{%user}}";
   }
-  // 表单验证的写法，required，unique，email，compare等为一些自带的验证；而像validatePass，则为自定义验证方法
+// 表单验证的写法，required，unique，email，compare等为一些自带的验证；而像validatePass，则为自定义验证方法
   public function rules()
   {
     return [
@@ -46,29 +48,29 @@ class User extends ActiveRecord
 
   public function validatePass()
   {
-     if (!$this->hasErrors()) {
-            $loginname = "username";
-            if (preg_match('/@/', $this->loginname)) {
-                $loginname = "useremail";
-            }
-            $data = self::find()->where($loginname.' = :loginname and userpass = :pass', [':loginname' => $this->loginname, ':pass' => md5($this->userpass)])->one();
-            if (is_null($data)) {
-                $this->addError("userpass", "用户名或者密码错误");
-            }
-        }
+    if (!$this->hasErrors()) {
+      $loginname = "username";
+      if (preg_match('/@/', $this->loginname)) {
+        $loginname = "useremail";
+      }
+      $data = self::find()->where($loginname.' = :loginname and userpass = :pass', [':loginname' => $this->loginname, ':pass' => md5($this->userpass)])->one();
+      if (is_null($data)) {
+        $this->addError("userpass", "用户名或者密码错误");
+      }
+    }
   }
 
   public function reg($data, $scenario = 'reg')
   {
-    // 注册验证方法，要验证那些字段，到上面rules中进行注册
+// 注册验证方法，要验证那些字段，到上面rules中进行注册
     $this->scenario = $scenario;
-    // 下面的代码也是套路，载入controller传过来的数据，和验证数据；最后进行数据库(save,deleteAll,updateAll等)处理
+// 下面的代码也是套路，载入controller传过来的数据，和验证数据；最后进行数据库(save,deleteAll,updateAll等)处理
     if ($this->load($data) && $this->validate()) {
       $this->username = $data['User']['username'];
       $this->userpass = $data['User']['userpass'];
       $this->createtime = time();
       $this->userpass = md5($this->userpass);
-      // 存数据库
+// 存数据库
       if ($this->save(false)) {
         return true;
       }
@@ -80,11 +82,18 @@ class User extends ActiveRecord
   public function login($data)
   {
     $this->scenario = 'login';
+
     if ($this->load($data) && $this->validate()) {
+// 无论是邮箱还是用户名登录，session都存username
+      if (isset(User::find()->where('username=:name',[':name'=>$this->loginname])->one()->userid)) {
+        $username = User::find()->where('username=:name',[':name'=>$this->loginname])->one()->username;
+      } else {
+        $username = User::find()->where('useremail=:name',[':name'=>$this->loginname])->one()->username;
+      }
       $lifetime = $this->rememberMe?24*3600:0;
       $session = Yii::$app->session;
       session_set_cookie_params($lifetime);
-      $session['loginname'] = $this->loginname;
+      $session['loginname'] = $username;
       $session['isLogin'] = 1;
       return (bool)$session['isLogin'];
     }

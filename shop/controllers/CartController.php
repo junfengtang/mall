@@ -57,10 +57,17 @@ class CartController extends CommonController
 		$data['Cart']['createtime'] = time();
 		$model->load($data);
 		$model->save();
-
 		return $this->redirect(['cart/index']);
+	}
 
-
+	public function actionDel()
+	{
+		if (Yii::$app->session['isLogin']!=1) {
+			return $this->redirect(['member/auth']);
+		}
+		$cartid = Yii::$app->request->get('cartid');
+		Cart::deleteAll('cartid=:cid',[':cid'=>$cartid]);
+		return $this->redirect(['cart/index']);
 	}
 
 
