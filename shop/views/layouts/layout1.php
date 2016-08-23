@@ -224,58 +224,25 @@
     <h2>推荐商品</h2>
     <div class="body">
         <ul>
+             <?php foreach ($this->params['tui'] as $tui):?>
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">Netbook Acer Travel B113-E-10072</a>
+                        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $tui->productid]); ?>"><?php echo $tui->title;?></a>
                         <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
+                            <div class="price-prev"><?php echo $tui->price;?></div>
+                            <div class="price-current"><?php echo $tui->saleprice;?></div>
                         </div>
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-01.jpg" />
+                        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $tui->productid]) ?>" class="thumb-holder">
+                            <img alt="<?php echo $tui->title ?>" src="<?php echo $tui->cover ?>" data-echo="<?php echo $tui->cover ?>" />
                         </a>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">PowerShot Elph 115 16MP Digital Camera</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-02.jpg" />
-                        </a>
-                    </div>
-                </div>
-            </li>
-            
-            <li>
-                <div class="row">                        
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">PowerShot Elph 115 16MP Digital Camera</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>  
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-03.jpg" />
-                        </a>
-                    </div>
-                </div>
-            </li>
+            <?php endforeach;?>      
         </ul>
     </div><!-- /.body -->
 </div> <!-- /.widget -->
@@ -287,59 +254,25 @@
     <h2>促销商品</h2>
     <div class="body">
         <ul>
+           <?php foreach ($this->params['sale'] as $sale):?>
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">HP Scanner 2910P</a>
+                        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $sale->productid]); ?>"><?php echo $sale->title ?></a>
                         <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
+                            <div class="price-prev"><?php echo $sale->price ?></div>
+                            <div class="price-current"><?php echo $sale->saleprice ?></div>
                         </div>
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-04.jpg" />
-                        </a>
-                    </div>
-                </div>
-
-            </li>
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">Galaxy Tab 3 GT-P5210 16GB, Wi-Fi, 10.1in - White</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>  
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-05.jpg" />
+                        <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $sale->productid]) ?>" class="thumb-holder">
+                            <img alt="<?php echo $sale->title ?>" src="<?php echo $sale->cover ?>" data-echo="<?php echo $sale->cover ?>" />
                         </a>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">PowerShot Elph 115 16MP Digital Camera</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>  
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-06.jpg" />
-                        </a>
-                    </div>
-                </div>
-            </li>
+            <?php endforeach;?>   
         </ul>
     </div><!-- /.body -->
 </div> <!-- /.widget -->
@@ -351,60 +284,25 @@
     <h2>最热商品</h2>
     <div class="body">
         <ul>
+            <?php foreach ($this->params['hot'] as $hot):?>
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">Galaxy Tab GT-P5210, 10" 16GB Wi-Fi</a>
+                    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $hot->productid]); ?>"><?php echo $hot->title ?></a>
                         <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
+                        <div class="price-prev">￥<?php echo $hot->price ?></div>
+                        <div class="price-current">￥<?php echo $hot->saleprice ?></div>
                         </div>
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-07.jpg" />
+                    <a href="<?php echo yii\helpers\Url::to(['product/detail', 'productid' => $hot->productid]) ?>" class="thumb-holder">
+                            <img alt="<?php echo $hot->title ?>" src="<?php echo $hot->cover ?>" data-echo="<?php echo $hot->cover ?>" />
                         </a>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">PowerShot Elph 115 16MP Digital Camera</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>  
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-08.jpg" />
-                        </a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="single-product.html">Surface RT 64GB, Wi-Fi, 10.6in - Dark Titanium</a>
-                        <div class="price">
-                            <div class="price-prev">￥2000</div>
-                            <div class="price-current">￥1873</div>
-                        </div>
-                    </div>  
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-small-09.jpg" />
-                        </a>
-                    </div>
-
-                </div>
-            </li>
+            <?php endforeach;?>
         </ul>
     </div><!-- /.body -->
 </div><!-- /.widget -->

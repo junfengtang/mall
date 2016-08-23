@@ -50091,3 +50091,1108 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1471867494.847
     'REQUEST_TIME' => 1471867494
 ]
+2016-08-23 02:23:59 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: menu' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:227
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php(227): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/junfeng/...', 227, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\MemberController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<!-- ==========...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/MemberController.php(29): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:23:59 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57533'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471919039.039
+    'REQUEST_TIME' => 1471919039
+]
+2016-08-23 02:24:01 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: menu' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:227
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php(227): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/junfeng/...', 227, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\MemberController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<!-- ==========...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/MemberController.php(29): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:24:01 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57534'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471919041.681
+    'REQUEST_TIME' => 1471919041
+]
+2016-08-23 02:25:23 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: menu' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:227
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php(227): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/junfeng/...', 227, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\MemberController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<!-- ==========...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/MemberController.php(29): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:25:23 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471919123.004
+    'REQUEST_TIME' => 1471919123
+]
+2016-08-23 02:27:45 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: menu' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:227
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php(227): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/junfeng/...', 227, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\MemberController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<!-- ==========...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/MemberController.php(29): yii\base\Controller->render('auth', Array)
+#6 [internal function]: app\controllers\MemberController->actionAuth()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('auth', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('member/auth', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:27:45 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_GET = [
+    'r' => 'member/auth'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=member%2Fauth'
+    'REQUEST_URI' => '/index.php?r=member%2Fauth'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471919265.753
+    'REQUEST_TIME' => 1471919265
+]
+2016-08-23 02:42:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting ';'' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php:244
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-23 02:42:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57887'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920128.579
+    'REQUEST_TIME' => 1471920128
+]
+2016-08-23 02:45:38 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: pro' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php:231
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(231): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/junfeng/...', 231, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:45:38 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57946'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920338.496
+    'REQUEST_TIME' => 1471920338
+]
+2016-08-23 02:47:20 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: pro' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php:231
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(231): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/junfeng/...', 231, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:47:20 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920440.704
+    'REQUEST_TIME' => 1471920440
+]
+2016-08-23 02:48:25 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '(', expecting ';'' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:289
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-23 02:48:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/detail'
+    'productid' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '57994'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fdetail&productid=5'
+    'REQUEST_URI' => '/index.php?r=product%2Fdetail&productid=5'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920505.417
+    'REQUEST_TIME' => 1471920505
+]
+2016-08-23 02:50:01 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?'' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout2.php:275
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-23 02:50:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/detail'
+    'productid' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://web.shop.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58040'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fdetail&productid=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fdetail&productid=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920600.992
+    'REQUEST_TIME' => 1471920600
+]
+2016-08-23 02:53:06 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: pro' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php:240
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(240): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/junfeng/...', 240, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:53:06 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58105'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471920786.922
+    'REQUEST_TIME' => 1471920786
+]
+2016-08-23 02:58:18 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: issale' in /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php:257
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(257): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/junfeng/...', 257, Array)
+#1 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#5 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-08-23 02:58:18 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921098.473
+    'REQUEST_TIME' => 1471921098
+]
+2016-08-23 02:59:10 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 02:59:10 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58191'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921150.285
+    'REQUEST_TIME' => 1471921150
+]
+2016-08-23 02:59:11 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 02:59:11 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58194'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921151.636
+    'REQUEST_TIME' => 1471921151
+]
+2016-08-23 02:59:19 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 02:59:19 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58196'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921159.558
+    'REQUEST_TIME' => 1471921159
+]
+2016-08-23 03:01:04 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 03:01:04 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921264.413
+    'REQUEST_TIME' => 1471921264
+]
+2016-08-23 03:01:05 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 03:01:05 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58233'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921265.753
+    'REQUEST_TIME' => 1471921265
+]
+2016-08-23 03:01:31 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Product::saletitle' in /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('saletitle')
+#1 /Users/junfeng/project/imooc_mall/mall/shop/views/layouts/layout1.php(265): yii\db\BaseActiveRecord->__get('saletitle')
+#2 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(325): require('/Users/junfeng/...')
+#3 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/junfeng/...', Array)
+#4 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/junfeng/...', Array, Object(app\controllers\IndexController))
+#5 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('  \r\n<div id="to...')
+#6 /Users/junfeng/project/imooc_mall/mall/shop/controllers/IndexController.php(13): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\IndexController->actionIndex()
+#8 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#11 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#12 /Users/junfeng/project/imooc_mall/mall/shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/junfeng/project/imooc_mall/mall/shop/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2016-08-23 03:01:31 [127.0.0.1][-][6c80lkqdv2uch1q2ta9tusap27][info][application] $_COOKIE = [
+    '_csrf' => 'a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6\";}'
+    'PHPSESSID' => '6c80lkqdv2uch1q2ta9tusap27'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'referrer' => -1
+    ]
+    'admin' => [
+        'adminuser' => 'root'
+        'isLogin' => 1
+    ]
+    'referrer' => 'http://web.shop.com/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'web.shop.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=a840e12edf85dc58bba3e027eee2be4a01a337fb2a79912036a651a9a86c82cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1O5XV3nJ848lwg4m_SlSxb7f-Y3vVA6%22%3B%7D; PHPSESSID=6c80lkqdv2uch1q2ta9tusap27'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/usr/local/Cellar/httpd24/2.4.18/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.6.20'
+    'SERVER_NAME' => 'web.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/junfeng/project/imooc_mall/mall/shop/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Users/junfeng/project/imooc_mall/mall/shop/web/index.php'
+    'REMOTE_PORT' => '58254'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1471921291.557
+    'REQUEST_TIME' => 1471921291
+]

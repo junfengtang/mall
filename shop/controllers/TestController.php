@@ -18,6 +18,14 @@ class TestController extends Controller
  	$cache -> delete('key1');
  	var_dump($cache->get('key1'));
  }
+ public function actionInfo()
+{
+    \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    return [
+        'message' => 'hello world',
+        'code' => 100,
+    ];
+}
 
 
 }

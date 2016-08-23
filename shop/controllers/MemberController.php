@@ -5,7 +5,7 @@ use yii\web\Controller;
 use app\models\User;
 use Yii;
 
-class MemberController extends Controller
+class MemberController extends CommonController
 {
 
 	public function actionAuth()
